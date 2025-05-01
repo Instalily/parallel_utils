@@ -45,4 +45,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Author
 
-Evan Vera - evan@instalily.ai 
+Evan Vera - evan@instalily.ai
+
+## Repository
+
+This project is hosted on GitHub at [Instalily/parallel_utils](https://github.com/Instalily/parallel_utils). 
