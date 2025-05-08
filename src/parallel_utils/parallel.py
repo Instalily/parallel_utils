@@ -39,16 +39,15 @@ def execute(func: Callable, args: List[tuple], max_workers: int = 10) -> List[An
     futures: List[Future] = []
 
     def thread_func(thread_id: int):
-        thread_index = thread_id
         local_results = []
-        while thread_index < n:
+
+        for i in range(thread_id, n, max_workers):
             try:
-                result = func(*args[thread_index])
+                result = func(*args[i])
                 local_results.append(result)
             except Exception as e:
-                print(f"Error processing args[{thread_index}]: {e}")
+                print(f"Error processing args[{i}]: {e}")
                 local_results.append(None)
-            thread_index += max_workers
         return local_results
 
     with ThreadPoolExecutor(max_workers=max_workers) as executor:
