@@ -8,11 +8,11 @@ version = "0.1.0"
 authors = [
     { name = "Evan Vera", email = "evan@instalily.ai" },
 ]
-description = "A library for parallel execution of functions"
+description = "Decorators for parallel execution of async (I/O-bound) and sync (CPU-bound/blocking I/O) functions."
 readme = "README.md"
 requires-python = ">=3.8"
 license = "MIT"
-keywords = ["parallel", "concurrent", "execution", "async"]
+keywords = ["parallel", "concurrent", "execution", "async", "asyncio", "thread", "threaded", "decorator"]
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Intended Audience :: Developers",
@@ -22,6 +22,9 @@ classifiers = [
     "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: System :: Networking",
+    "Operating System :: OS Independent",
 ]
 
 [project.urls]
